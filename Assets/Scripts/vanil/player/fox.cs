@@ -75,7 +75,7 @@ public class fox : MonoBehaviour
         {
             manager.GetComponent<Win>().Lost();
             manager.GetComponent<SoundHandle>().over.Play();
-            Destroy(this);
+            this.enabled = false;
         }
     }
     
